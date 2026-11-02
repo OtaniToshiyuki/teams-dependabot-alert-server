@@ -64,3 +64,4 @@ export const dependabotAlertSchema = z.discriminatedUnion("action", [
 ]);
 
 export type DependabotAlert = z.infer<typeof dependabotAlertSchema>;
+export type Alert = z.infer<typeof alertSchema>;
