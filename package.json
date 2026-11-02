@@ -6,6 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --check . --ignore-path .gitignore --ignore-path .prettierignore",
+    "format:fix": "prettier --write .",
     "lint": "eslint",
     "db:push": "drizzle-kit push"
   },
@@ -24,6 +27,7 @@
     "drizzle-kit": "^0.31.11",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
