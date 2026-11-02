@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 
 export function proxy(request: NextRequest) {
   const secret = process.env.SECRET_KEY;
-  const token = request.headers.get("authorization")?.replace(/^Bearer /, "");
+  const token = request.headers.get("x-hub-signature-256");
 
   // SECRET_KEY 未設定なら全拒否 (fail closed)
   const ok =
