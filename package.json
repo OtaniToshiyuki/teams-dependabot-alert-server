@@ -9,9 +9,12 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --check . --ignore-path .gitignore --ignore-path .prettierignore",
     "format:fix": "prettier --write .",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.10.0",
+    "drizzle-orm": "^0.45.4",
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -21,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.11",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
     "prettier": "^3.9.10",
